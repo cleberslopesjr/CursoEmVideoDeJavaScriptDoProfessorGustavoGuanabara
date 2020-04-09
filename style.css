@@ -1,9 +1,27 @@
 @charset "utf-8";
 body {
-    font: normal 20pt Arial;
+    font: normal 12pt Time New Romam;
+    background-color: blue;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
+    color: #ffffff;
+    font-size: 23px;
+    margin-bottom: 0px;
+    border-left: solid 5px #ffffff;
+    padding-left: 5px;
+    margin-left: 77px;
+}
+h2, h3, h4 {
+    margin-top: 0px;
+}
+h5, h6 {
     text-align: center;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 17px;
 }
 img {
     display: block;
@@ -15,8 +33,10 @@ img {
 }
 p#iframe {
     text-align: center;
+    font-size: 12px;
 }
 article {
+    background-color: #ffffff;
     width: 450px;
     border: solid 1px black;
     margin: 10px auto 10px auto;
