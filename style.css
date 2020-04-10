@@ -1,7 +1,7 @@
 @charset "utf-8";
 body {
     font: normal 12pt Time New Romam;
-    background-color: blue;
+    background-color: rgb(105, 105, 173);
 }
 h1, h2, h3, h4 {
     color: #ffffff;
@@ -16,6 +16,9 @@ h2, h3, h4 {
 }
 h5, h6 {
     text-align: center;
+}
+h1 {
+    color: rgb(255, 212, 22)
 }
 h5 {
     font-size: 20px;
@@ -40,6 +43,7 @@ article {
     width: 450px;
     border: solid 1px black;
     margin: 10px auto 10px auto;
+    padding: 10px;
 }
 table {
     border-collapse: collapse;
