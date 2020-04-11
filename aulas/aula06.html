@@ -1,0 +1,52 @@
+<!-- Curso em Vídeo -->
+<!-- Curso de Java Script -->
+<!-- Prof. Gustavo Guanabara -->
+<!-- Aula 6 - Manipulação/Tratamento de Dados -->
+<!-- Exercício nº 5 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula - JavaScript</title>
+    <meta name="author" content="github.com/cleberslopesjr">
+    <meta name="keyword" content="Curso em Vídeo, Vídeo Aula de JavaScript, Professor Gustavo Guanabara, Aula 6, Tratamento/Manipulação de Dados">
+    <meta name="description" content="6ª Aula do Curso em Vídeo de JavaScript do Professor Gustavo Guanabara">
+    <link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Curso em Vídeo.</h1>
+            <h2>Vídeo Aula de JavaScript.</h2>
+            <h3>Professor: Gustavo Guanabara.</h3>
+            <h4>Aula 6 - Tratamento/Manipulação de Dados.</h4>
+        </hgroup>
+        <p id="iframe"><iframe width="400" height="225" src="https://www.youtube.com/embed/OJgu_KCCUSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </header>
+    <article>
+        <h6>Fixando a Quantidade de Dígitos a Direita.</h6>
+            <div class="node">
+                <p>&gt; var n1 = 1545.5</p>
+                <p class="numeral">1545.5</p>
+                <p>&gt; n1.toFixed(3)</p>
+                <p class="string">'1545.500'</p>
+            </div>
+        <h6>Trocando a o Ponto por Vírgula.</h6>
+            <div class="node">
+                <p>&gt; var n1 = 1545.5</p>
+                <p class="numeral">1545.5</p>
+                <p>&gt; n1.toFixed(2).replace('.', ',')</p>
+                <p class="string">'1545,50'</p>
+            </div>
+        <h6>Convertendo o número para o formato de moeda brasileira (R$)</h6>
+            <div class="node">
+                <p>&gt; var n1 = 1545.5</p>
+                <p class="numeral">1545.5</p>
+                <p>&gt; n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})</p>
+                <p class="string">'R$ 1,545.50'</p>
+            </div>
+    </article>
+    
+</body>
+</html>
