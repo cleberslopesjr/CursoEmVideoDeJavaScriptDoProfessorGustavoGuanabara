@@ -18,13 +18,21 @@ h5, h6 {
     text-align: center;
 }
 h1 {
-    color: rgb(255, 212, 22)
+    color: rgb(255, 212, 22);
 }
 h5 {
     font-size: 20px;
 }
 h6 {
     font-size: 17px;
+}
+a.titulo {
+    color: #ffffff;
+    text-decoration: none;
+}
+a.tituloH1 {
+    color: rgb(255, 212, 22);
+    text-decoration: none;
 }
 img {
     display: block;
