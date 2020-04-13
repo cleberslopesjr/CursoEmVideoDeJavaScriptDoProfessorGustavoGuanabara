@@ -71,3 +71,21 @@ tr, th, td {
 .string {
     color: green;
 }
+.comando {
+    color: #a9a9a9;
+}
+.retorno {
+    color: #4f4f4f;
+}
+.fundo {
+    background-color: #f29472;
+}
+.ex {
+    background-color: #ffefd5;
+    color: black;
+    margin: 10px 50px 10px 50px;
+    padding-left: 10px;
+}
+.ex p {
+    margin-bottom: 0px;
+}

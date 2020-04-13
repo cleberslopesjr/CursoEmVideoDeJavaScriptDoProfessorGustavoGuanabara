@@ -15,22 +15,52 @@
         <p id="iframe"><iframe width="400" height="225" src="https://www.youtube.com/embed/WWZX8RWLxIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     </header>
     <article>
+        <h6>Revisão da Aula Anterior.</h6>
+        <a href="prints/aula9revisaoDaAula8.png"><img src="prints/aula9revisaoDaAula8.png" alt="print mostrando as questões propostas pelo Prof. Gustavo Guanabara para a revisão da aula 9 do Curso em Vídeo de JávaScript"></a>
+            <dl>
+                <dt>Q01 - Qual é a diferença entre usar: =, == e === em códigos escritos em JS?</dt>
+                    <dd><b>Respostas:</b></dd>
+                    <dd>= (operador de atribuição) - é usado para atribuir valores a uma variável;</dd>
+                    <div class="ex">
+                        <p>n1 = 10</p>
+                        <p>idade = 50</p>
+                        <p>peso = 84</p>
+                        <p>altura = 1.55</p>
+                    </div>
+                    <div class="ex">
+                        <p>Para x=10 temos que:</p>
+                        <p>x == 8 : retorna false</p>
+                        <p>x==10 : retorna true</p>
+                        <p>x=="10" : retorna true</p>
+                    </div>
+                    <dd>=== (valor e tipo igual) - é usado para a comparação entre duas variáveis, mas isso irá verificar o tipo estrito, o que significa que ele irá verificar o tipo de dados e comparar dois valores.</dd>
+                <dt>Q02 - Em uma mesma expressão, temos os operadores || e &&. Quem eu resolvo primeiro?</dt>
+                <div class="ex">
+                    Nesse caso é resolvida primeira a conjunção (&&) e depois a dijunção (||).
+                </div>
+                <dt>Q03 - Sabe usar o operador ternário para colocar em entre dois valores em uma variável?</dt>
+                <div class="node">
+                    <p class="comando">var idade = 19</p>
+                    <p class="retorno">&gt; undefined</p>
+                    <p class="comando">var r = idade >= 18 ? 'MAIOR' : 'MENOR'</p>
+                    <p class="retorno">&gt; r</p>
+                    <p class="string">'MAIOR'</p>
+                </div>
+            </dl>
         <h5>Aula 9 - Introdução ao DOM.</h5>
-        <p>Arvore DOM</p>
-        <p>window</p>
-        <p>Objetos:</p>
-        <p>location</p>
-        <p>Document</p>
-        <p>history</p>
-        <p>Como selecionar:</p>
-        <p>Por Marca - getElementsByTagName();</p>
-        <p>Por ID - getElementById();</p>
-        <p>Por Nome - getElementsByName;</p>
-        <p>Por classe - getElementsByCassName;</p>
-        <p>Por Seletor - querySelector() e querySelectorAll().</p>
+        <p>DOM é a abreviação de: <b>d</b>ocument <b>o</b>bject <b>m</b>odel.</p>
+        <h6>Arvore DOM</h6>
+        <a href="prints/aula9arvoreDOM.png"><img src="prints/aula9arvoreDOM.png" alt="print mostrando, a esquerda, a arvore DOM do documento html usado no exercício dessa aula. A direita o Prof. Gustavo Guanabara"></a>
+        <h6>Métodos de Seleção.</h6>
+        <a href="prints/aula9metodosDeSelecao.png"><img src="prints/aula9metodosDeSelecao.png" alt="print mostrando a esquerda os cinco métodos de seleção possíveis atualmente no JavaScript. A direita o professor Gustavo Guanabara"></a>
+        <p>Por Marca - <span class="fundo">getElementsByTagName()</span>;</p>
+        <p>Por ID - <span class="fundo">getElementById()</span>;</p>
+        <p>Por Nome - <span class="fundo">getElementsByName</span>;</p>
+        <p>Por classe - <span class="fundo">getElementsByCassName</span>;</p>
+        <p>Por Seletor - <span class="fundo">querySelector() e querySelectorAll()</span>.</p>
         <h6>Exercício 5</h6>
         <h6>Parte 1</h6>
-        <img src="prints/aula9baseParaExercicios.png" alt="print do código no VS Code, a esquerda, e do navegador mostrando o resultado, a direita">
+        <a href="prints/aula9baseParaExercicios.png"><img src="prints/aula9baseParaExercicios.png" alt="print do código no VS Code, a esquerda, e do navegador mostrando o resultado, a direita"></a>
         <h6>Primeiro Exemplo: "Olá, mundo!"</h6>
         <a href="prints/aula9primeiroExemploOlaMundo.png"><img src="prints/aula9primeiroExemploOlaMundo.png" alt="print mostrando o primeiro exemplo de DOM com o: 'Olá, mundo!'"></a>
         <h6>Outro Exemplo mostrando o &lt;charset=utf-8&gt;</h6>
@@ -38,8 +68,6 @@
         <h6>Mostrando o Navegador</h6>
         <a href="prints/aula9mostrandoONavegador.png"><img src="prints/aula9mostrandoONavegador.png" alt="print mostrando o exemplo de DOM exibindo na página HTML o navegador"></a>
         <p>Obs: estranhamente, no caso, o navegador exibido está errado, pois foi mostrado o Netscape, quando eu estava usando o Google Chrome.</p>
-
-        aula9mostrandoONavegador
     </article>
 </body>
 </html>
