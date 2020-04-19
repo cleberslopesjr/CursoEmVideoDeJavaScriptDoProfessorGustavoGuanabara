@@ -1,0 +1,96 @@
+<!-- Curso em Vídeo -->
+<!-- Curso de Java Script -->
+<!-- Prof. Gustavo Guanabara -->
+<!-- Aula 10 - Eventos DOM -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#area2 {
+            font: normal 20pt Arial;
+            background: rgb(42, 139, 42);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h5>Aula 10 do Curso em Vídeo de JavaScript do Prof. Gustavo Guanabara.</h5>
+    </header>
+    <article>
+
+        <h6>Eventos DOM.</h6>
+        <h6>Eventos de mouse:</h6>
+        <p>mouseenter</p>
+        <p>mousemove</p>
+        <p>mousedown</p>
+        <p>mouseup</p>
+        <p>click</p>
+        <p>Link para lista de eventos: <a href="https://developer.mozilla.org/pt-BR/docs/Web/Events" target="_blank">eventos.</a></p>
+    </article>
+    <section>
+        <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+            Interaja...
+        </div>
+    </section>
+    <br>
+    <section>
+        <div id="area2">
+            Interaja...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            //a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
+    <script>
+        var b = window.document.getElementById('area2')
+        b.addEventListener('click', clicara)
+        b.addEventListener('mouseenter', entrara)
+        b.addEventListener('mouseout', saira)
+        function clicara() {
+            b.innerText = 'Clicou!'
+            b.style.background = 'red'
+        }
+        function entrara() {
+            b.innerText = 'Entrou!'
+            //a.style.background = 'red'
+        }
+        function saira() {
+            b.innerText = 'Saiu!'
+            b.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

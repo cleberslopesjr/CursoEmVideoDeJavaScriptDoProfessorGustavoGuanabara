@@ -19,9 +19,86 @@
     <h1>Iniciando Estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div class="msg">Clique em mim.</div>
-    <script>
-        window.document.write(window.navigator.appName)
-    </script>
+    <div id="msg"><p>Clique em mim (id).</p></div>
+    <div name="msg"><p>Clique em mim (name).</p></div>
+    <div class="msg"><p>Clique em mim (class).</p></div>
+    <p>
+        <script>
+            window.document.write('Olá, Mundo!')
+        </script>
+    </p>
+    <p>
+        <script>
+            window.document.write(window.document.charset)
+        </script>
+    </p>
+    <p>
+        <script>
+            window.document.write(window.navigator.appName)
+        </script>
+    </p>
+    <p>
+        <script>
+            window.document.write(window.document.URL)
+        </script>
+    </p>
+    <p>
+        <script>
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[1]
+            window.document.write('Está escrito assim: ' + p1.innerText)
+            corpo.style.background = 'black'
+            p1.style.color = 'blue'
+            
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(p1.innerText)
+        </script>
+    </p>
+    <p>
+        <script>
+            document.write(p1.innerHTML)
+        </script>
+    </p>
+    <p>
+        <script>
+            window.alert(p1.innerHTML)
+        </script>
+    </p>
+    <p>
+        <script>
+            window.alert(p1.innerText)
+        </script>
+    </p>
+    <p>
+        <script>
+            var d = window.document.getElementById('msg')
+            d.style.background = 'green'
+            //d.innerText = 'Estou aguardando...'
+            window.document.getElementById('msg').innerText = 'Olá.'
+        </script>
+    </p>
+    <p>
+        <script>
+            var n = window.document.getElementsByName('msg')[0]
+            n.innerText = 'Olá!'
+        </script>
+    </p>
+    <p>
+        <script>
+            var c = window.document.getElementsByClassName('msg')[0]
+            c.innerText = 'Olá?'
+        </script>
+    </p>
+    <p>
+        <script>
+            var q = window.document.querySelector('div#msg')
+            q.style.color = 'blue'
+            var q2 = window.document.querySelector('div.msg')
+            q2.style.background = 'blue'
+        </script>
+    </p>
 </body>
 </html>
