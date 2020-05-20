@@ -1,0 +1,65 @@
+<!-- Curso em Vídeo -->
+<!-- Curso de JavaScript -->
+<!-- Prof. Gustavo Guanabara -->
+<!-- Módulo B -->
+<!-- Aula 8 - Operadors Aritméticos  -->
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - Exercício 8</title>
+    <meta name="author" content="github.com/cleberslopesjr">
+    <meta name="keyword" content="Curso de JavaScript, Curso em Vídeo, Curso de JavaScript, Professor Gustavo Guanabara">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="https://youtuve.com/user/cursoemvideo">Curso em vídeo.</a></h1>
+        <h2><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">Vídeo Aula de JavaScript.</a></h2>
+        <h3><a href="https://github.com/gustavoguanabara">Prof. Gustavo Guanabara.</a></h3>
+        <h4><strong>Condições</strong>(Parte 1)</h4>
+    </header>
+    <article id="revisao">
+        <h5>Revisão.</h5>
+        <img src="prints/aula11Revisao.png" alt="print do vídeo mostrando as três perguntas feitas na revisão">
+        <div class="pergunta">
+            <p>/* <b>Q01</b></p>
+            <p>Consegue citar três eventos que podem acontecer com elementos DOM de um site? */</p>
+        </div>
+        <p class="resposta">Resposta: </p>
+        <div class="pergunta">
+                <p>*/ <b>Q02</b></p>
+                <p>O que é uma <b>função</b>? Como criar funções em JS?</p>
+                <p>*/</p>
+        </div>
+        <p class="resposta">Resposta: </p>
+        <div class="pergunta">
+            <p>*/ <b>Q03</b></p>
+            <p>Sabe como pegar os valores de caixas de texto e fazer cálculos com eles? */</p>
+        </div>
+        <p class="resposta">Resposta: </p>
+    </article>
+    <article>
+        <h5>Condições (Parte 1).</h5>
+        <p>Digite no campo abaixo a velocidade que você estava dirigindo e depois precione o botão verificar.</p>
+        <input type="number" name="txtvel" id="txtvel">Km/h
+        <input type="button" value="Verificar" onclick="calcular()">
+        <div id="res">
+
+        </div>
+        <script>
+            function calcular(){
+                var txtv = window.document.querySelector('input#txtvel')
+                var res = window.document.querySelector('div#res')
+                var vel = Number(txtv.value)
+                res.innerHTML = `<p>A velocidade do seu carro é <strong>${vel}Km/h</strong>.</p>`
+                if (vel > 60) {
+                    res.innerHTML += `<p>Você ultrapassou a velocidade permitida. MULTADO!</p>`
+                }
+                    res.innerHTML += `<p>Dirija sempre usando cinto de segurança!</p>`
+            }
+        </script>
+    </article>
+</body>
+</html>

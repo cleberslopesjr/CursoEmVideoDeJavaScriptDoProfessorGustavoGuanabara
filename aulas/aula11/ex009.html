@@ -1,0 +1,50 @@
+<!-- Curso em Vídeo -->
+<!-- Curso de JavaScript -->
+<!-- Prof. Gustavo Guanabara -->
+<!-- Módulo D -->
+<!-- Aula 11 -->
+<!-- Exercício 9 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11ª Aula - Exercício 9</title>
+    <meta name="author" content="github.com/cleberslopesjr">
+    <meta name="keyword" content="Curso em Vídeo, Vídeo Aula de JavaScript, Professor Gustavo Guanabara, Aula 6, Condições (Parte 1)">
+    <meta name="description" content="11ª aula do Curso em Vídeo de JavaScript do Professor Gustavo Guanabara">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ">Curso em Vídeo.</a></h1>
+            <h2><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1">Vídeo Aula de JavaScript.</a></h2>
+            <h3><a href="https://github.com/gustavoguanabara/">Prof. Gustavo Guanabara.</a></h3>
+            <h4><a href="https://youtu.be/cOdG4eACN2A">Aula 11 (Módulo D) - Condições (Parte 1), exercício 9.</a>
+            </h4>
+        </hgroup>
+        <p id="iframe"><iframe width="400" height="225" src="https://www.youtube.com/embed/cOdG4eACN2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </header>
+    <article>
+        <h5>Condições (Parte1), Exercício 9.</h5>
+        <p>Gentileza responder no quadro abaixo se você vive nos EUA ou no Brasil.</p>
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Enter" onclick="processar()">
+        <div id="res"></div>
+        <script>
+            function processar() {
+                var vpais = window.document.querySelector('input#pais')
+                var res = window.document.querySelector('div#res')
+                //var vcountry = ('country')
+                res.innerHTML = `<p>Vivendo em ${vpais}.</p>`
+                if (vpais == Brasil) {
+                    res.innerHTML += `<p>Você é Brasileiro.<p>`
+                } else {
+                    res.innerHTML += `<p>Você é Estrangeiro!</p>`
+                }
+            }
+        </script>
+    </article>
+</body>
+</html>
