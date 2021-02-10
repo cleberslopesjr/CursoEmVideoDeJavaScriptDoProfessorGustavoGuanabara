@@ -13,14 +13,14 @@
 </head>
 <body>
     <header>
-        <h1><a href="https://www.youtube.com/user/cursosemvideo" target="_blank" class="tituloH1">Curso em Vídeo.</a></h1>
-        <h2><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank" class="titulo">Vídeo <strong>Aula de JavaScript</strong>.</a></h2>
-        <h3><a href="https://github.com/gustavoguanabara" target="_blank" class="titulo">Prof. Gustavo Guanabara.</a></h3>
-        <h4><a href="https://youtu.be/WWZX8RWLxIk" target="_blank" class="titulo">Aula 9 (Módulo C) - Introdução ao DOM.</a></h4>
+        <h1><a href="https://www.youtube.com/user/cursosemvideo" target="_blank" class="cabecalhoH1">Curso em Vídeo.</a></h1>
+        <h2><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank" class="cabecalho">Vídeo <strong>Aula de JavaScript</strong>.</a></h2>
+        <h3><a href="https://github.com/gustavoguanabara" target="_blank" class="cabecalho">Prof. Gustavo Guanabara.</a></h3>
+        <h4><a href="https://youtu.be/WWZX8RWLxIk" target="_blank" class="cabecalho">Aula 9 (Módulo C) - Introdução ao DOM.</a></h4>
         <p id="iframe"><iframe width="400" height="225" src="https://www.youtube.com/embed/WWZX8RWLxIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     </header>
     <article>
-        <h6 class-"sub">Revisão da Aula Anterior.</h6>
+        <h6>Revisão da Aula Anterior.</h6>
         <a href="../prints/aula9revisaoDaAula8.png"><img src="../prints/aula9revisaoDaAula8.png" alt="print mostrando as questões propostas pelo Prof. Gustavo Guanabara para a revisão da aula 9 do Curso em Vídeo de JávaScript"></a>
             <dl>
                 <dt>Q01 - Qual é a diferença entre usar: =, == e === em códigos escritos em JS?</dt>
@@ -46,16 +46,18 @@
                 </div>
                 <dt>Q03 - Sabe usar o operador ternário para colocar em entre dois valores em uma variável?</dt>
                 <div class="node">
-                    <p class="comando">var idade = 19</p>
-                    <p class="retorno">&gt; undefined</p>
-                    <p class="comando">var r = idade >= 18 ? 'MAIOR' : 'MENOR'</p>
-                    <p class="retorno">&gt; r</p>
-                    <p class="string">'MAIOR'</p>
+                    <code>
+                        <p class="comando">var idade = 19</p>
+                        <p class="retorno">>undefined</p>
+                        <p class="comando">var r=idade>=18 ? 'MAIOR':'MENOR'</p>
+                        <p class="retorno">>r</p>
+                        <p class="string">'MAIOR'</p>
+                    </code>
                 </div>
             </dl>
     </article>
     <article>
-        <h5 class-"sub">Aula 9 - Introdução ao DOM.</h5>
+        <h5>Aula 9 - Introdução ao DOM.</h5>
         <p>DOM é a abreviação de: <b>d</b>ocument <b>o</b>bject <b>m</b>odel.</p>
         <h6>Arvore DOM</h6>
         <a href="../prints/aula9arvoreDOM.png"><img src="../prints/aula9arvoreDOM.png" alt="print mostrando, a esquerda, a arvore DOM do documento html usado no exercício dessa aula. A direita o Prof. Gustavo Guanabara"></a>
@@ -73,11 +75,11 @@
         <h5>Métodos de Seleção.</h5>
         <a href="../prints/aula9metodosDeSelecao.png"><img src="../prints/aula9metodosDeSelecao.png" alt="print mostrando a esquerda os cinco métodos de seleção possíveis atualmente no JavaScript. A direita o professor Gustavo Guanabara"></a>
         <p>Métodos de Acesso aos Elementos da àrvore DOM:</p>
-        <p>Por Marca - <span class="fundo">getElementsByTagName()</span>;</p>
-        <p>Por ID - <span class="fundo">getElementById()</span>;</p>
-        <p>Por Nome - <span class="fundo">getElementsByName</span>;</p>
-        <p>Por classe - <span class="fundo">getElementsByCassName</span>;</p>
-        <p>Por Seletor - <span class="fundo">querySelector() e querySelectorAll()</span>.</p>
+        <p>Por Marca - <code class="fundo">getElementsByTagName()</code>;</p>
+        <p>Por ID - <code class="fundo">getElementById()</code>;</p>
+        <p>Por Nome - <code class="fundo">getElementsByName</code>;</p>
+        <p>Por classe - <code class="fundo">getElementsByCassName</code>;</p>
+        <p>Por Seletor - <code class="fundo">querySelector() e querySelectorAll()</code>.</p>
     </article>
     <footer>
         <p>&copy; CursoemVideo</p>

@@ -28,13 +28,14 @@ h5 {
 h6 {
     font-size: 17px;
 }
-a.titulo {
-    color: #ffffff;
+a {
     text-decoration: none;
 }
-a.tituloH1 {
+a.cabecalho {
+    color: #ffffff;
+}
+a.cabecalhoH1 {
     color: rgb(255, 212, 22);
-    text-decoration: none;
 }
 img {
     display: block;
@@ -109,7 +110,7 @@ tr, th, td {
     margin-bottom: 10px;
     padding: 10px;
 }
-.titulo {
+/*.titulo {
     border-radius: 10px;
     background: #e8e8e8;
     color: #000000;
@@ -118,7 +119,7 @@ tr, th, td {
     margin-left: 290px;
     margin-bottom: 10px;
     padding: 10px;
-}
+}*/
 .numeral {
     color: yellow;
 }
