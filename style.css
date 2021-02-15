@@ -1,6 +1,10 @@
 @charset "utf-8";
+* {
+    box-sizing: border-box;
+}
 body {
-    font: normal Time New Romam 12px;
+    font-family: Time New Romam;
+    font-size: 12pt;
     background-color: rgb(70, 142, 236);
 }
 h1, h2, h3, h4 {
@@ -48,6 +52,12 @@ img {
 p#iframe {
     text-align: center;
     font-size: 12px;
+}
+
+iframe {
+    width: 400px;
+    height: 225px;
+    border: none;
 }
 
 article {
@@ -146,4 +156,93 @@ tr, th, td {
 }
 .amarelo {
     color: #ffff00;
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        background-color: lightblue;
+        font-size: 10pt;
+    }
+    h1 {
+        color: #ffd416;
+    }
+    h2, h3, h4 {
+        color: #000000;
+    }
+    h1, h2, h3, h4 {
+        font-size: 11pt;
+        border-left: solid 3px rgb(0, 110, 146);
+        padding-left: 3px;
+        margin-left: 2px;
+    }
+    h5 {
+        font-size: 12pt;
+    }
+    iframe {
+    width: 220px;
+    height: 112px;
+    }
+    article {
+        width: 220px;
+        margin: 4px auto 4px auto;
+        padding: 4px 4px 4px 4px;
+    }
+    blockquote {
+        margin: 7px;
+    }
+}
+
+@media only screen and (min-width: 321px) {
+    body {background-color: #f08080;}
+}
+
+@media only screen and (min-width: 376px) {
+    body {background-color: #e0ffff;}
+}
+
+@media only screen and (min-width: 426px) {
+    body {
+        background-color: #fafad2;
+        font-size: 21pt;
+    }
+    h1 {
+        color: #ffd416;
+    }
+    h2, h3, h4 {
+        color: #000000;
+    }
+    h1, h2, h3, h4 {
+        font-size: 33pt;
+        border-left: solid 7px lightblue;
+        padding-left: 4px;
+        margin-left: 21px;
+    }
+    h5 {
+        font-size: 27pt;
+    }
+    iframe {
+        width: 406px;
+        height: 207px;
+    }
+    article {
+        width: 406px;
+        margin: 4px auto 4px auto;
+        padding: 4px 4px 4px 4px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    body {background-color: #d4d4d4;}
+}
+
+@media only screen and (min-width: 1025px) {
+    body {background-color: lightgreen;}
+}
+
+@media only screen and (min-width: 1441px) {
+    body {background-color: lightgrey;}
+}
+
+@media only screen and (min-width: 4100px) {
+    body {background-color: lightpink;}
 }
