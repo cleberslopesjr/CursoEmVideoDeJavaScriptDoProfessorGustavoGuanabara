@@ -20,7 +20,9 @@
     </div>
     <script>
         function calcular(){
-            var txtv = window.document.querySelector('input#txtvel')
+            var txtv = window.document.getElementById(`txtvel`)
+            //tanto a linha acima, como a linha abaixo estão certas. Ambas cumprem a mesma função, são apenas formas diferentes de fazer a mesma coisa.
+            //var txtv = window.document.querySelector('input#txtvel')
             var res = window.document.querySelector('div#res')
             var vel = Number(txtv.value)
             res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</strong></p>`

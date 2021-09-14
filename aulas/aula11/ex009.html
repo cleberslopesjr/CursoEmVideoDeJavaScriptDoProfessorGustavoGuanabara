@@ -28,20 +28,22 @@
     </header>
     <article>
         <h5>Condições (Parte1), Exercício 9.</h5>
-        <p>Gentileza responder no quadro abaixo se você vive nos EUA ou no Brasil.</p>
-        <input type="text" name="pais" id="pais">
-        <input type="button" value="Enter" onclick="processar()">
-        <div id="res"></div>
+        <p>Gentileza responder no quadro abaixo em país você vive.</p>
+        <input type="text" name="país" id="estado">
+        <input type="button" value="Enter" onclick="proces()">
+        <div id="resposta">
+
+        </div>
         <script>
-            function processar() {
-                var vpais = window.document.querySelector('input#pais')
-                var res = window.document.querySelector('div#res')
-                //var vcountry = ('country')
-                res.innerHTML = `<p>Vivendo em ${vpais}.</p>`
-                if (vpais == Brasil) {
-                    res.innerHTML += `<p>Você é Brasileiro.<p>`
+            function proces() {
+                var country = window.document.querySelector('input#estado')
+                var resp = window.document.querySelector('div#resposta')
+                var stringCountry = String(country.value)
+                resp.innerHTML = `<p>Vivendo em ${stringCountry}.</p>`
+                if (stringCountry === 'Brasil') {
+                    resp.innerHTML += `<p>Você é Brasileiro.</p>`
                 } else {
-                    res.innerHTML += `<p>Você é Estrangeiro!</p>`
+                    resp.innerHTML += `<p>Você é Estrangeiro!</p>`
                 }
             }
         </script>

@@ -1,4 +1,10 @@
-var vel = 78.2
+//Curso em Vídeo
+//Curso de JavaScript
+//Prof. Gustavo Guanabara
+//Módulo D
+//Aula 11
+//Exercício 8
+var vel = 12
 console.log(`A velocidade do seu carro é ${vel}Km/h.`)
 if (vel > 60) { // Condição simples!
     console.log(`Você ultrapassou a velocidade permitida. MULTADO!`)

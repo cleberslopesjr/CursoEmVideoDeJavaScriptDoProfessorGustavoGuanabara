@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM.</h1>
+    <p>Aqui vai o resultado.</p>
+    <p>Aprendendo a suar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim.</div>
+
+    <script>
+        window.document.write('<h2 id="center1">Introduzindo a seleção com alguns exemplos</h2>')
+        document.getElementById("center1").style.textAlign = "center"
+        window.document.write('<p>Olá, Mundo!</p>')
+        //window.document.write(window.document.charset)
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.document.URL)
+        window.document.write('<h2 id="center2">Selecionando objetos DOM.</h2>')
+        document.getElementById("center2").style.textAlign = "center"
+        window.document.write('<h3 id="center3">Por Marca - <code>getElementByTagName</code></h3>')
+        document.getElementById('center3').style.textAlign = "center"
+            window.document.write('<p>Para selecionamos um elemento DOM pela marca usamos o comando <code>getElementsByTagName</code>.')
+                document.write('<p>Exemplo 1: mudando a cor do primeiro parágrafo para azul.</p>')
+                document.write('<p>Primeiro criamos uma variável de nome <code>p1</code> através do comando <code>getElementByTagName</code>.</p>')
+                document.write('<p><code>var p1 = window.document.getElementsByTagName("p")[0]</code></p>')
+                var p1 = window.document.getElementsByTagName('p')[0]
+                document.write('<p>Como temos dois parágrafos nesse documento, tivemos que colocar os colchetes no final do código para podermos indicar a qual dos dois parágrafos estavamos nos referindo. Sendo que o 1º parágrafo é o 0, o 2º é o 1 e assim por diante.</p>')
+                document.write('<p>Depois de criamos a variável, na linha abixo escrevemos o código:</p>')
+                document.write('<p><code>p1.innerText</code></p>')
+                document.write('E o resultado é esse que vemos na imagaem abaixo abaixo:')
+                window.document.write('<p>Está escirto assim: ' + '"' + p1.innerText + '"')
+                    document.write('<div id="img"><img src="imagens/mudandoACorDoTexto.png"></div>')
+                    document.getElementById('img').style.border = "1px solid #000000"
+            window.document.write('<p>2) No exemplo abaixo mudamos a cor do primeiro parpagrafo para azul.</p>')
+            window.document.write('<p><code>p1.style.color = "blue"</code></p>')
+            p1.style.color = 'blue'
+        window.document.write('3) No exemplo abaixo criamos a variável <code>corpo</code> selecionando o <code>background</code> da página para estilizá-lo, e o fizemos temporariamente mudando a cor para preto.')
+            window.document.write('<p><code>var corpo = window.document.body</code></p>')
+            window.document.write('<p><code>corpo.style.background = "black"</code></p>')
+            var corpo = window.document.body
+            //corpo.style.background = 'black'
+        
+        window.document.write('<p>4) Os exemplos abaixo exemplificam a diferença de usar o <code>innerText</code> do <code>innerHTML</code>:</p>')
+            
+            var p2 = document.getElementsByTagName('p')[1]
+            document.write('<p><code>document.write(p2.innerHTML)</code></p>')
+            document.write(p2.innerHTML)
+            document.write('<p><code>document.write(p2.innerText)</code></p>')
+            document.write(p2.innerText)
+            document.write('<p>Vemos claramente acima que a palavra "DOM" do texto não foi negritada quando usamos o <code>innerText</code>.</p>')
+            document.write('<p>Obs: para a perfeita execução do exemplo acima tive que criar a variável <code>p2</code> evitando que os exercícios anteriores também fossem alterados.</p>')
+
+            document.write('<p>Abaixo vemos a diferença de usar o <code>innerHTML</code> do <code>innerText</code> no comando <code>alert</code>:</p>')
+                document.write('<p><code>window.alert(p2.innerText)</code></p>')
+                document.write('<p><code>window.alert(p2.innerHTML)</code></p>')
+            
+
+            window.document.write('<h3 id="center4">Por ID</h3>')
+        document.getElementById('center4').style.textAlign = 'center'
+            document.write('<p>No exemplo abaixo o Prof. Gustavo Guanabara exemplificou como selecionar um elemento HTML usando o comando <code>getElementBYId</code>:</p>')
+            document.write('<p>Primeiro criamos a variável <code>d</code>:</p>')
+            document.write('<p><code>var d = document.getElementById("msg")</code></p>')
+            document.write('<p>Depois inserimos o código:</p>')
+            document.write('<p><code>d.style.background = "green"</code></p>')
+            var d = document.getElementById('msg')
+            d.style.background = 'green'
+            
+            document.write('<p id="imagem"><img src="imagens/mudandoOBackgroundDaDiv.png"></p>')
+            document.getElementById('imagem').style.border = "1px solid #000000";
+            document.write('<p>Para a execução do exercício acima foi criada a variável <code>d</code>.</p>')
+    </script>
+        <button type="button" onclick="alerta1()">inner HTML</button>
+        <button type="button" onclick="alerta2()">inner Text</button>
+    <script>
+        function(alerta1) {
+                window.alert(p2.innerHTML)  
+            }
+            function(alerta2) {
+                window.alert(p2.innerText)
+            }
+        window.document.write('<h3>Por Nome</h3>')
+        window.document.write('<h3>Por Classe</h3>')
+        window.document.write('<h3>Por Seletor</h3>')
+    </script>
+</body>
+</html>

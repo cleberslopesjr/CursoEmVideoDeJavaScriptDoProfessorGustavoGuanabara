@@ -11,30 +11,42 @@
     <meta name="author" content="github.com/cleberslopesjr">
     <meta name="keyword" content="Aula de JavaScript, Curso em Vídeo, Gustavo Guanabara">
     <meta name="description" content="Aula 1 de JavaScrit por Gustavo Guanabara">
-    <link href="../../style.css" rel="stylesheet">
+    <link href="../../styles/style.css" rel="stylesheet">
 <body>
     <header>
-        <h1>Curso em Vídeo.</h1>
-        <h2>Vídeo Aula de JavaScript.</h2>
-        <h3>Prof. Gustavo Guanabara.</h3>
-        <h4>Aula 1 - O que o JavaScript é capaz de fazer?</h4>
+        <hgroup>
+            <script src="../../scripts/cabecalho.js"></script>
+            <!--<h1>Curso em Vídeo.</h1>
+            <h2>Vídeo Aula de JavaScript.</h2>
+            <h3>Prof. Gustavo Guanabara.</h3>-->
+            <h4>Aula 1 - O que o JavaScript é capaz de fazer?</h4>
+        </hgroup>
     </header>
     <article>
         <h5>Aula 1 - O que o JavaScript é capaz de fazer?</h5>
         <p>O que o JavaScript faz?</p>
         <p>R: faz praticamente tudo.</p>
-        <h3>Exércício</h3>
+        <h6>Exércício</h6>
         <a href="ex001.html">Exércício nº 1.</a>
-        <h3>Vocabulário.</h3>
-        <p><strong>alert</strong></p>
-        <p>Ex: alert('Olá, Mundo!')</p>
-        <p><strong>document</strong></p>
-        <p>Ex1: document.body.style.background = 'black'</p>
-        <p>Ex2: document.querySelector('img#hplogo').style.filter = 'grayscale(100%)'</p>
-        <p>Ex3: document.querySelector('span.bstn-h1-title').innerText = 'Curso em Vídeo de JavaScript é o melhor do YouTube.'</p>
+        <h6>Vocabulário.</h6>
+        <script>
+            document.write(`
+                <p><strong>alert</strong></p>
+                <p>Ex: alert('Olá, Mundo!')</p>
+                <p><strong>document</strong></p>
+                <p>Ex1: document.body.style.background = 'black'</p>
+                <p>Ex2: document.querySelector('img#hplogo').style.filter = 'grayscale(100%)'</p>
+                <p>Ex3: document.querySelector('span.bstn-h1-title').innerText = 'Curso em Vídeo de JavaScript é o melhor do YouTube.'</p>`)
+        </script>
     </article>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi obcaecati illum alias voluptate necessitatibus recusandae corrupti vel corporis quod laudantium dolore dolor nihil cumque, minus enim voluptatibus facere atque.</p>
+    <p>
+        <script>
+            document.write(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quasi obcaecati illum alias voluptate necessitatibus recusandae corrupti vel corporis quod laudantium dolore dolor nihil cumque, minus enim voluptatibus facere atque.`)
+        </script>
+    </p>
     <footer>
-        <p>&copy; CursoemVideo</p>
+        <!--<p>&copy; CursoemVideo</p>-->
+        <script src="../../scripts/rodape.js"></script>
     </footer>
+    
 </body>

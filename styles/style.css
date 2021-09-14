@@ -3,9 +3,11 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Time New Romam;
-    font-size: 12pt;
     background-color: rgb(70, 142, 236);
+    font-family: Time New Romam;
+    font-size: 16pt;
+    margin: 0px;
+    padding: 0px;
 }
 h1, h2, h3, h4 {
     color: #ffffff;
@@ -22,9 +24,10 @@ h5, h6 {
     background: rgb(235, 34, 94);
     color: #ffffff;
     text-align: center;
+    font-size: 16px;
 }
 h1 {
-    color: rgb(255, 212, 22);
+    color: #ffd416;
 }
 h5 {
     font-size: 20px;
@@ -161,7 +164,7 @@ tr, th, td {
 @media only screen and (max-width: 320px) {
     body {
         background-color: lightblue;
-        font-size: 10pt;
+        font-size: 10px;
     }
     h1 {
         color: #ffd416;
@@ -170,13 +173,13 @@ tr, th, td {
         color: #000000;
     }
     h1, h2, h3, h4 {
-        font-size: 11pt;
+        font-size: 11px;
         border-left: solid 3px rgb(0, 110, 146);
         padding-left: 3px;
         margin-left: 2px;
     }
     h5 {
-        font-size: 12pt;
+        font-size: 12px;
     }
     iframe {
     width: 220px;

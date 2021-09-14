@@ -1,0 +1,1 @@
+document.write('<p>&copy; CursoemVideo</p>')
